@@ -148,6 +148,10 @@ const HomePage = () => {
   const p = document.createElement('p');
   p.innerHTML = 'A VERY NICE CONTENT TO GET THE ATTENTION OF ALL THE PEOPLE WHO GET IN THE PAGE AND LIKE TO TRAY NEW GOURMETS STUFF AND THINGS LIKE THAT';
   containers.home.appendChild(p);
+
+  const p1 = document.createElement('p');
+  p1.innerHTML = 'SOME MORE CONTENT ABOUT A THING THAT I THOUGHTFULLY DO NOT KNOW WHAT. I AM RUNNING OUT OF WORD FOR THIS PAGE BUT . . . . IT IS LOOKING GOOD AND YOU KNOW THAT I AM RIGHT';
+  containers.home.appendChild(p1);
 };
 
 window.onload = () => {
