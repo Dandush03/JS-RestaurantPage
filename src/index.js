@@ -140,7 +140,7 @@ const HomePage = () => {
   const h2 = document.createElement('h2');
   h2.innerHTML = 'This is the Best Restaurant Page EVER ! ! !';
   containers.home.appendChild(h2);
-  
+
   const h1 = document.createElement('h1');
   h1.innerHTML = 'Restaurant Name [HERE]';
   containers.home.appendChild(h1);
