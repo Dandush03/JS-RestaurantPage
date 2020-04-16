@@ -1,5 +1,84 @@
-$body-color: #f00;
+$space: 5px;
+$max-p: 100%;
+$max-vh: 100vh;
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  color: $body-color;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+
+  > div {
+    float: right;
+    width: $max-p / 2;
+  }
 }
+
+header {
+  overflow: hidden;
+  padding: $space * 3;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding: $space * 5;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.main-img {
+  height: $max-vh;
+  overflow: hidden;
+  position: relative;
+  width: $max-p;
+
+  img {
+    height: $max-p;
+    position: absolute;
+    transition: all 3s;
+  }
+
+  .noshow {
+    opacity: 0;
+  }
+
+  .show {
+    z-index: 2;
+  }
+}
+
+menu {
+  display: flex;
+  margin: $space * 5;
+  margin-bottom: 0;
+  padding: 0;
+
+  ul {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    padding: 0;
+  }
+}
+
+.img-container {
+  left: 0;
+  position: absolute;
+  width: $max-p / 2;
+}
+
+li {
+  list-style: none;
+  margin: $space;
+
+  a {
+    text-decoration: none;
+  }
+}
+
