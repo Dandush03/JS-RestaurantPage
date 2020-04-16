@@ -2,6 +2,20 @@ $space: 5px;
 $max-p: 100%;
 $max-vh: 100vh;
 
+@keyframes scaling {
+  0% {
+    transform: scale(0);
+  }
+
+  70% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -26,11 +40,18 @@ header {
 main {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding: $space * 5;
 
   h2 {
     text-align: center;
   }
+}
+
+.main-container {
+  animation-duration: 1s;
+  animation-name: scaling;
+  display: block;
 }
 
 .main-img {
@@ -43,6 +64,7 @@ main {
     height: $max-p;
     position: absolute;
     transition: all 3s;
+    width: $max-p;
   }
 
   .noshow {
@@ -82,3 +104,15 @@ li {
   }
 }
 
+.home {
+  padding: $space * 15;
+  text-align: center;
+
+  h1 {
+    margin-top: $space * 30;
+  }
+
+  p {
+    margin-top: $space * 20;
+  }
+}

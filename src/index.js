@@ -104,14 +104,17 @@ const MainContainer = () => {
   const arrElements = [];
   const home = document.createElement('div');
   home.id = 'home';
+  home.className = 'main-container home';
   arrElements.push(home);
 
   const contact = document.createElement('div');
   contact.id = 'contact';
+  contact.className = 'main-container contact';
   arrElements.push(contact);
 
   const menu = document.createElement('div');
   menu.id = 'menu';
+  menu.className = 'main-container menu';
   arrElements.push(menu);
 
   const div = pageSetup.main;
@@ -137,6 +140,14 @@ const HomePage = () => {
   const h2 = document.createElement('h2');
   h2.innerHTML = 'This is the Best Restaurant Page EVER ! ! !';
   containers.home.appendChild(h2);
+  
+  const h1 = document.createElement('h1');
+  h1.innerHTML = 'Restaurant Name [HERE]';
+  containers.home.appendChild(h1);
+
+  const p = document.createElement('p');
+  p.innerHTML = 'A VERY NICE CONTENT TO GET THE ATTENTION OF ALL THE PEOPLE WHO GET IN THE PAGE AND LIKE TO TRAY NEW GOURMETS STUFF AND THINGS LIKE THAT';
+  containers.home.appendChild(p);
 };
 
 window.onload = () => {
