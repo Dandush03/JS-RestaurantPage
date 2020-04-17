@@ -1,4 +1,6 @@
 import './style.scss';
+import * as menuList from './menu.json';
+
 
 let pageSetup = null;
 let createImg = null;
@@ -134,7 +136,6 @@ const MainContainer = () => {
   };
 };
 
-
 /** Home Page */
 const HomePage = () => {
   const h2 = document.createElement('h2');
@@ -154,6 +155,48 @@ const HomePage = () => {
   containers.home.appendChild(p1);
 };
 
+/** Menu Page */
+const MenuPage = () => {
+  Object.keys(menuList).forEach((key) => {
+    Object.values(menuList[key]).forEach((menuPlates, index) => {
+      /** Create Menu Container */
+      const menu = document.createElement('div');
+      menu.setAttribute('name', `menu-${index + 1}`);
+      menuPlates.forEach((plate, number) => {
+        if (number === 0) {
+          const h2 = document.createElement('h2');
+          h2.innerHTML = plate.title;
+          menu.appendChild(h2);
+        } else {
+        /** Create Plate Container */
+          const div = document.createElement('div');
+          div.setAttribute('name', `plate-${number + 1}`);
+          /** Create Plate Title */
+          const h4 = document.createElement('h4');
+          h4.innerHTML = plate.title;
+          div.appendChild(h4);
+          /** Create Plate Description */
+          const p = document.createElement('p');
+          p.innerHTML = plate.description;
+          div.appendChild(p);
+          /** Create Plate Price */
+          const span = document.createElement('span');
+          span.innerHTML = plate.cost;
+          div.appendChild(span);
+          /** Append To Menu Tab */
+          menu.appendChild(div);
+        }
+      });
+      containers.menu.appendChild(menu);
+    });
+  });
+};
+
+/** Contact Page */
+const ContactPage = () => {
+
+};
+
 window.onload = () => {
   pageSetup = PageSetup();
   createImg = LeftImgSetUp();
@@ -162,4 +205,9 @@ window.onload = () => {
   containers = MainContainer();
   // eslint-disable-next-line no-unused-vars
   const homePage = HomePage();
+  // eslint-disable-next-line no-unused-vars
+  const menuPage = MenuPage();
+  // eslint-disable-next-line no-unused-vars
+  const contactPage = ContactPage();
+  containers.currentMenu('menu');
 };

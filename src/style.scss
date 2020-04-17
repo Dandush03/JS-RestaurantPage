@@ -116,3 +116,13 @@ li {
     margin-top: $space * 20;
   }
 }
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: $max-p;
+
+  > div {
+    width: $max-p / 2;
+  }
+}

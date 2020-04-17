@@ -1,0 +1,59 @@
+{
+  "menu1": [
+    {"title":"Appetizers"},
+    {
+      "title": "A delicious Salmon",
+      "description": "Very Taste",
+      "cost": "15.44$"
+    },
+    {
+      "title": "A delicious Salmon",
+      "description": "Very Taste",
+      "cost": "15.44$"
+    },
+    {
+      "title": "A delicious Salmon",
+      "description": "Very Taste",
+      "cost": "15.44$"
+    }
+  ],
+  "menu2": [
+    {"title":"Main Plates"},
+    {
+      "title": "A delicious Salmon",
+      "description": "Very Taste",
+      "cost": "15.44$"
+    },
+    {
+      "title": "A delicious Salmon",
+      "description": "Very Taste",
+      "cost": "15.44$"
+    }
+  ],
+  "menu3": [
+    {"title":"Deserts"},
+    {
+      "title": "A delicious Salmon",
+      "description": "Very Taste",
+      "cost": "15.44$"
+    },
+    {
+      "title": "A delicious Salmon",
+      "description": "Very Taste",
+      "cost": "15.44$"
+    }
+  ],
+  "menu4": [
+    {"title":"Beverage"},
+    {
+      "title": "A delicious Salmon",
+      "description": "Very Taste",
+      "cost": "15.44$"
+    },
+    {
+      "title": "A delicious Salmon",
+      "description": "Very Taste",
+      "cost": "15.44$"
+    }
+  ]
+}
