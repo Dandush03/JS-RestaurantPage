@@ -1,6 +1,4 @@
-$space: 5px;
-$max-p: 100%;
-$max-vh: 100vh;
+@import './variables';
 
 @keyframes scaling {
   0% {
@@ -33,14 +31,17 @@ body {
 }
 
 header {
+  background-color: $header-c;
   overflow: hidden;
   padding: $space * 3;
+  width: $max-p;
 }
 
 main {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 100px;
   padding: $space * 5;
 
   h2 {
@@ -76,19 +77,6 @@ main {
   }
 }
 
-menu {
-  display: flex;
-  margin: $space * 5;
-  margin-bottom: 0;
-  padding: 0;
-
-  ul {
-    display: inline-flex;
-    flex-direction: row-reverse;
-    padding: 0;
-  }
-}
-
 .img-container {
   left: 0;
   position: absolute;
@@ -104,25 +92,15 @@ li {
   }
 }
 
-.home {
-  padding: $space * 15;
-  text-align: center;
-
-  h1 {
-    margin-top: $space * 30;
-  }
-
-  p {
-    margin-top: $space * 20;
-  }
-}
-
-.menu {
+menu {
   display: flex;
-  flex-wrap: wrap;
-  width: $max-p;
+  margin: $space * 5;
+  margin-bottom: 0;
+  padding: 0;
 
-  > div {
-    width: $max-p / 2;
+  ul {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    padding: 0;
   }
 }

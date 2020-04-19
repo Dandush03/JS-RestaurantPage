@@ -1,0 +1,14 @@
+@import './../../variables';
+
+.home {
+  padding: $space * 15;
+  text-align: center;
+
+  h1 {
+    margin-top: $space * 30;
+  }
+
+  p {
+    margin-top: $space * 20;
+  }
+}
