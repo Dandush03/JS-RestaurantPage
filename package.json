@@ -1,0 +1,35 @@
+{
+  "name": "js-restaurantpage",
+  "version": "1.0.0",
+  "description": "Microverse Third JavaScript Project",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dandush03/JS-RestaurantPage.git"
+  },
+  "author": "Daniel Laloush",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dandush03/JS-RestaurantPage/issues"
+  },
+  "homepage": "https://github.com/Dandush03/JS-RestaurantPage#readme",
+  "devDependencies": {
+    "css-loader": "^3.5.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "json-loader": "^0.5.7",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

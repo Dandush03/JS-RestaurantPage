@@ -1,0 +1,25 @@
+@import './../../variables';
+
+body {
+  overflow-y: auto;
+}
+
+.img-container {
+  position: fixed;
+}
+
+header {
+  position: fixed;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: $max-p;
+
+  > div {
+    width: 50%;
+  }
+}
+
